@@ -1,0 +1,32 @@
+.to-top{
+	color:#ffd700;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:fixed;
+	border-color:#003C4C;
+	text-decoration:none;
+	transition:all .3s ease-out;
+	z-index: 3;
+}
+.to-top:before{
+	content:'▲';
+	font-size:2em;
+	position:fixed;
+	right:10px;
+    bottom:10px;
+	margin-left:-.7em;
+	border:solid .13em #ffd700;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:#003C4C;
+	border-color:#ffd700;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/d3a8c9b913/UntitledProject/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web:400, 700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400, 700' rel='stylesheet'>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href="index.css">
+    <link rel="shortcut icon" type="image/png" href="et_logo3.png" />
+        
+    <title>Documents &#8211; Eugene Thomas Portfolio</title>
+    
+	
+	</head>
+    <body>
+        <div class="header">
+            <ul class="topnav" id="myTopnav">
+                <a href="index.html" class="active"><img class="logo" src="et_logo3.png" /></a>
+        <div id="myNav" class="nav">
+        <li><b><a href="personal.html">Personal Project</a></b></li>
+        <li><b><a href="school_projects.html">School Projects</a></b></li>
+        <li><b><a href="documents.html">Documents</a></b></li>
+        <li><b><a href="resume.html">Résumé</a></b></li>
+        <li><b><a href="about-me.html">About Me</a></b></li>
+            </div>
+        </ul>
+        </div>
+        
+        <div class="menu">
+  <nav class="menu__nav">
+        <ul class="r-list menu__list">
+			<li class="menu__group"><b><a href='personal.html'>Personal Project</a></b></li>
+			<li class="menu__group"><b><a href='school_projects.html'>School Projects</a></b></li>
+			<li class="menu__group"><b><a href='documents.html'>Documents</a></b></li>
+			<li class="menu__group"><b><a href='resume.html'>Résumé</a></b></li>
+			<li class="menu__group"><b><a href='about-me.html'>About Me</a></b></li>
+		</ul>
+            </nav>
+        <div class="menu__toggle">
+    <button class="r-button menu__hamburger">
+      <span class="m-hamburger">
+        <span class="m-hamburger__label">Open menu</span>
+      </span>
+    </button>
+  </div> 
+        </div>
+            
+        <div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  
+  <a href="https://www.linkedin.com/in/eth0mas/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            
+</div>
+
+<button class="openbtn" onclick="openNav()"><i class="fa fa-share-alt"></i></button>  
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "47px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+        
+<style>
+  @media screen and (max-width: 2000px) {
+      body {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+      }
+  }
+
+  @media screen and (max-width: 1500px) {
+      body {
+          height: 85%;
+      }
+  }
+
+  @media screen and (max-width: 830px) {
+      body {
+          height: 0;
+      }
+  }
+
+  body {
+      display: table;
+      min-height: 100%;
+  }
+</style>
+
+
+<div class="newlogo">
+  <a href="index.html"><img class="logo2" src="et_logo3.png" /></a>
+</div>
+
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="jquery.easeScroll.js"></script>
+<script>
+  $("html").easeScroll();
+</script>
+
+<div style="text-align:center">
+    <h2 style="font-size: 25px; font-family: 'Titillium Web', sans-serif !important;">
+        <b><font>Graviton: Outlaws of Gravity</font></b>
+    </h2>
+</div>
+
+<div class="pdf">
+    <embed src="Game Design Document.pdf" type="application/pdf" width="1100px" height="692" />
+    <a href="Game Design Document.pdf" target="_blank"><b><p class="names" style="text-align: center; font-size: 23px;">Game Design Document</p></b></a>
+</div>
+
+<footer>
+<script type="text/JavaScript">
+var theDate=new Date();
+  document.write("<b>&#9993; e_thomasjr@outlook.com<br>Copyright  &copy; " + theDate.getFullYear() + " Eugene Thomas</b>");
+</script>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+var scrolltotop = {
+setting: {
+  startline: 100,
+  scrollto: 0,
+  scrollduration: 1e3,
+  fadeduration: [500, 100]
+},
+controlHTML: '<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow27.png" />',
+controlattrs: {
+  offsetx: 5,
+  offsety: 5
+},
+anchorkeyword: "#top",
+state: {
+  isvisible: !1,
+  shouldvisible: !1
+},
+scrollup: function () {
+  this.cssfixedsupport || this.$control.css({
+      opacity: 0
+  });
+  var t = isNaN(this.setting.scrollto) ? this.setting.scrollto : parseInt(this.setting.scrollto);
+  t = "string" == typeof t && 1 == jQuery("#" + t).length ? jQuery("#" + t).offset().top : 0, this
+      .$body.animate({
+          scrollTop: t
+      }, this.setting.scrollduration)
+},
+keepfixed: function () {
+  var t = jQuery(window),
+      o = t.scrollLeft() + t.width() - this.$control.width() - this.controlattrs.offsetx,
+      s = t.scrollTop() + t.height() - this.$control.height() - this.controlattrs.offsety;
+  this.$control.css({
+      left: o + "px",
+      top: s + "px"
+  })
+},
+togglecontrol: function () {
+  var st = jQuery(window).scrollTop();
+  this.cssfixedsupport || this.keepfixed(), this.state.shouldvisible = t >= this.setting
+      .startline ? !0 : !1, this.state.shouldvisible && !this.state.isvisible ? (this.$control
+          .stop().animate({
+              opacity: 1
+          }, this.setting.fadeduration[0]), this.state.isvisible = !0) : 0 == this.state
+      .shouldvisible && this.state.isvisible && (this.$control.stop().animate({
+          opacity: 0
+      }, this.setting.fadeduration[1]), this.state.isvisible = !1)
+},
+init: function () {
+  jQuery(document).ready(function (t) {
+      var o = scrolltotop,
+          s = document.all;
+      o.cssfixedsupport = !s || s && "CSS1Compat" == document.compatMode && window
+          .XMLHttpRequest, o.$body = t(window.opera ? "CSS1Compat" == document
+              .compatMode ? "html" : "body" : "html,body"), o.$control = t(
+              '<div id="topcontrol">' + o.controlHTML + "</div>").css({
+              position: o.cssfixedsupport ? "fixed" : "absolute",
+              bottom: o.controlattrs.offsety,
+              right: o.controlattrs.offsetx,
+              opacity: 0,
+              cursor: "pointer"
+          }).attr({
+              title: "Scroll to Top"
+          }).click(function () {
+              return o.scrollup(), !1
+          }).appendTo("body"), document.all && !window.XMLHttpRequest && "" != o.$control
+          .text() && o.$control.css({
+              width: o.$control.width()
+          }), o.togglecontrol(), t('a[href="' + o.anchorkeyword + '"]').click(
+      function () {
+              return o.scrollup(), !1
+          }), t(window).bind("scroll resize", function (t) {
+              o.togglecontrol()
+          })
+  })
+}
+};
+scrolltotop.init();
+</script>
+<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more
+info.</noscript>
+        <script  src="script.js"></script>
+        
+    </body>
+</html>
