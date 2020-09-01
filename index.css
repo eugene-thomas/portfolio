@@ -134,6 +134,7 @@ ul.topnav li :hover {
         top: 50%;
         right: 0%;
         z-index: 91;
+        transition: 0.3s;
     }
 
     .openbtn:hover {
@@ -501,7 +502,7 @@ ul.topnav li :hover {
         text-align: center;
         display: flex;
         vertical-align: middle;
-        height: 40rem;
+        height: 38rem;
     }
     
     ul.topnav li a {
@@ -554,6 +555,13 @@ ul.topnav li :hover {
 }
 
 @media screen and (max-width: 1400px) {
+    .container {
+        text-align: center;
+        display: flex;
+        vertical-align: middle;
+        height: 35rem;
+    }
+    
     ul.topnav li a {
         display: block;
         text-align: center;
