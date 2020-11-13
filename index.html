@@ -47,21 +47,32 @@
           </div> 
                 </div>
 
+        <img class="img1" src="0500.png" />
+
         <video autoplay loop id="video-background" muted plays-inline>
-          <source src="Forest_Scene.mp4" type="video/mp4">
+          <source src="Chicago_Video.mp4" type="video/mp4">
         </video>
             
             <!-- Goes to end of body of course -->
         <script>
             var vid = document.getElementById("video-background");
             vid.addEventListener("timeupdate", function () {
-                if(this.currentTime >= 14.0) {
-                    this.currentTime = 1.0;
+                if(this.currentTime >= 20.0) {
+                    this.currentTime = 0.0;
                 }
             });
         </script>
 
 <style>
+  @media screen and (max-width: 5200px) {
+    html, body {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+      }
+  }
+
   @media screen and (max-width: 2000px) {
     html, body {
           width: 100%;
