@@ -11,6 +11,12 @@ body {
     overflow-x: hidden;
 }
 
+section {
+  width: 1123px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 .header {
     width: 100%;
     height: auto;
@@ -42,7 +48,7 @@ ul.topnav li :hover {
     .img1 {
         display: none;
     }
-    
+
     .container {
         text-align: center;
         display: flex;
@@ -58,7 +64,7 @@ ul.topnav li :hover {
         font-weight: 700px;
         margin: auto;
     }
-    
+
     ul.topnav {
         list-style-type: none;
         margin: 0;
@@ -114,7 +120,7 @@ ul.topnav li :hover {
         display: block;
         transition: 0.3s;
     }
-    
+
     .sidepanel a:hover {
         color: #B33A1A;
     }
@@ -172,7 +178,7 @@ ul.topnav li :hover {
         height: auto;
         float: left;
     }
-    
+
     .menuBtn {
         display: none;
     }
@@ -218,7 +224,7 @@ ul.topnav li :hover {
         height: auto;
         border: solid #B33B19;
     }
-    
+
     .names {
         width: 30%;
         margin: 0 auto;
@@ -268,13 +274,13 @@ ul.topnav li :hover {
     .controller {
         margin-top: -10px;
     }
-    
+
      .col1 a  {
         font-size: 20px;
         font-weight: 500;
         text-decoration: none;
     }
-    
+
     .col2 a  {
         font-size: 20px;
         font-weight: 500;
@@ -510,7 +516,7 @@ ul.topnav li :hover {
         vertical-align: middle;
         height: 38rem;
     }
-    
+
     ul.topnav li a {
         display: block;
         text-align: center;
@@ -567,7 +573,7 @@ ul.topnav li :hover {
         vertical-align: middle;
         height: 35rem;
     }
-    
+
     ul.topnav li a {
         display: block;
         text-align: center;
@@ -624,12 +630,12 @@ ul.topnav li :hover {
     .nav .closebtn {
         display: none
     }
-    
+
     .img {
         width: 344px;
         height: auto;
     }
-    
+
      .column a  {
         font-size: 20px;
         font-weight: 500;
@@ -648,7 +654,7 @@ ul.topnav li :hover {
         display: inline;
         z-index: -100;
     }
-    
+
     #video-background {
         display: none;
     }
@@ -673,7 +679,7 @@ ul.topnav li :hover {
         align-items: inherit;
         justify-content: inherit;
     }
-    
+
     label {
         display: contents;
     }
@@ -710,7 +716,7 @@ ul.topnav li :hover {
     .menu__toggle {
         display: block;
     }
-    
+
     .menuBtn {
         display: block;
     }
@@ -729,7 +735,7 @@ ul.topnav li :hover {
         clear: both;
         float: left;
     }
-    
+
     .names {
         color: #B33A1A;
         width: 50%;
@@ -757,7 +763,7 @@ ul.topnav li :hover {
         align-items: inherit;
         justify-content: inherit;
     }
-    
+
     .row {
         content: "";
         display: block;
@@ -866,7 +872,7 @@ ul.topnav li :hover {
         width: 460px;
         height: 260px;
     }
-    
+
     .img {
         width: 100%;
         height: auto;
