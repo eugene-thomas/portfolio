@@ -29,6 +29,15 @@ ul.topnav li :hover {
     color: #B33A1A;
 }
 
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    color: #000000;
+    text-align: left;
+  }
+
 /* The only rule that matters */
 #video-background {
     /*  making the video fullscreen  */
@@ -310,6 +319,7 @@ ul.topnav li :hover {
         clear: both;
         margin: auto;
         width: 75%;
+        float: left;
     }
 
     .c {
@@ -343,6 +353,7 @@ ul.topnav li :hover {
         clear: both;
         margin: 0 auto;
         width: 75%;
+        float: left;
         margin-bottom: 30px;
     }
 
@@ -369,11 +380,6 @@ ul.topnav li :hover {
 
     #col2 {
         width: 100%;
-    }
-
-    .paragraph {
-        margin-left: 200px;
-        margin-right: 200px;
     }
 
     .demo {
@@ -631,6 +637,10 @@ ul.topnav li :hover {
         display: none
     }
 
+    section {
+        width: 900px !important;
+      }
+
     .img {
         width: 344px;
         height: auto;
@@ -641,6 +651,12 @@ ul.topnav li :hover {
         font-weight: 500;
         text-decoration: none;
     }
+}
+
+@media screen and (max-width: 900px) {
+    section {
+        width: 720px !important;
+      }
 }
 
 @media screen and (max-width: 830px) {
@@ -806,8 +822,6 @@ ul.topnav li :hover {
         word-spacing: 2px;
         margin: auto;
         margin-top: 10px;
-        margin-left: 45px;
-        margin-right: 45px;
     }
 
     #col {
@@ -946,6 +960,12 @@ ul.topnav li :hover {
         font-size: 12px;
         position: initial;
     }
+}
+
+@media screen and (max-width: 600px) {
+    section{
+        width: 100%!important;
+      }
 }
 
 #logo {

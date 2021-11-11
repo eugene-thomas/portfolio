@@ -32,10 +32,6 @@
         </div>
 
         <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="jquery.easeScroll.js"></script>
-    <script>
-        $("html").easeScroll();
-    </script>
         
         <div class="menu">
             <nav class="menu__nav">
@@ -113,6 +109,8 @@
                     margin-bottom: 30px !important;
                 }
             </style>
+
+            <section>
         
         <div class="newlogo">
         <a href="index.html" class="active"><img class="logo2" src="et_logo3.png" /></a>
@@ -138,15 +136,62 @@
 	
     <div>
         <iframe class="demo" frameborder="0" width="1120" height="768" src="https://www.dailymotion.com/embed/video/x7o85mn" allowfullscreen allow="autoplay"></iframe>
-        <iframe src="https://pastebin.com/embed_iframe/ZJNM2aiL" style="border:none;" class="demo"></iframe>
+        <pre>
+            <code>
+                void WorldState::Initialize()
+                {
+                    m_TilesPerRow = 32;
+                    m_Tiles =
+                    {
+                    0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 0, 2, 2, 1, 2, 2, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 0, 0, 2, 1, 2, 0, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 2, 2, 2, 1, 2, 2, 2, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 2, 1, 1, 1, 1, 1, 2, 0,
+                    0, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 1, 1, 1, 1, 2, 0, 2, 1, 1, 1, 1, 1, 2, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 2, 0, 2, 1, 1, 1, 1, 1, 2, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                };
+ 
+                LockedDoorData lockedDoor = {};
+                lockedDoor.bLocked = true;
+                lockedDoor.Position = Vector2d(27.65f * 96.0f, 3.0f * 362.0f);
+                m_LockedDoors.push_back(lockedDoor);
+ 
+                Reset();
+            }
+            </code>
+        </pre>
     </div>
 
 <footer>
-    <script type="text/JavaScript">
-        var theDate=new Date();
-            document.write("<b>&#9993; e_thomasjr@outlook.com<br>Copyright  &copy; " + theDate.getFullYear() + " Eugene Thomas</b>");
-        </script>
+    <div class="copyright">
+        <p>Copyright &copy; <span id="year"></span> Eugene Thomas</p>
+       </div>
+
+       <script>
+       var date = new Date().getFullYear();
+
+document.getElementById("year").innerHTML = date;
+       </script>
 </footer>
+
+</section>
         
 <script src="script.js"></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script><script  src="script2.js"></script>
