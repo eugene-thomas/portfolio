@@ -33,10 +33,6 @@
         </div>
 
         <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="jquery.easeScroll.js"></script>
-    <script>
-        $("html").easeScroll();
-    </script>
         
         <div class="menu">
             <nav class="menu__nav">
@@ -105,6 +101,8 @@
                     min-height: 100%;
                 }
             </style>
+
+            <section>
         
         <div class="newlogo">
         <a href="index.html" class="active"><img class="logo2" src="et_logo3.png" /></a>
@@ -130,8 +128,28 @@
 	
     <div>
         <iframe class="demo" frameborder="0" width="1120" height="768" src="https://www.dailymotion.com/embed/video/x7o956o" allowfullscreen allow="autoplay"></iframe>
-        <p class="paragraph" style="text-align: left; font-size: 23px;">This is a game I’m personally creating. The story deals with death, corruption, and heroism of knights that have to save the kingdom and the realm from the evil in the world and the evil from within. I programmed the player movement, path finder of the Artificial Intelligence (AI), User Experience (UX), and User Interface (UI) of the pause and help menu I created. This is still a work in progress but more video demos will be added in the future.</p>
-        <iframe src="https://pastebin.com/embed_iframe/h95MPrBs" style="border:none;" class="demo1"></iframe>
+        <p style="text-align: left; font-size: 23px;">This is a game I’m personally creating. The story deals with death, corruption, and heroism of knights that have to save the kingdom and the realm from the evil in the world and the evil from within. I programmed the player movement, path finder of the Artificial Intelligence (AI), User Experience (UX), and User Interface (UI) of the pause and help menu I created. This is still a work in progress but more video demos will be added in the future.</p>
+        <pre>
+            <code>
+                void Update()
+                {
+                    if (transform.position != target[current].position)
+                    {
+                        Vector3 pos = Vector3.MoveTowards(transform.position, target[current].position, speed * Time.deltaTime);
+                        GetComponent<Rigidbody>().MovePosition(pos);
+                        Vector3 relativePos = target[current].position - transform.position;
+
+                        // the second argument, upwards, defaults to Vector3.up
+                        Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+                        transform.rotation = rotation;
+                    }
+                    else
+                    {
+                        current = (current + 1) % target.Length;
+                    }
+                }
+            </code>
+        </pre>
     </div>
     
     <div class="r">
@@ -188,11 +206,18 @@
 </svg>
 
 <footer>
-    <script type="text/JavaScript">
-        var theDate=new Date();
-            document.write("<b>&#9993; e_thomasjr@outlook.com<br>Copyright  &copy; " + theDate.getFullYear() + " Eugene Thomas</b>");
-        </script>
+    <div class="copyright">
+        <p>Copyright &copy; <span id="year"></span> Eugene Thomas</p>
+       </div>
+
+       <script>
+       var date = new Date().getFullYear();
+
+document.getElementById("year").innerHTML = date;
+       </script>
 </footer>
+
+</section>
         
 <script src="script.js"></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script><script  src="script2.js"></script>
